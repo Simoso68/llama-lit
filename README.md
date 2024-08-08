@@ -37,8 +37,9 @@ ollama pull llama3.1:latest
 pip install streamlit ollama
 ```
 
-> [IMPORTANT]
-> On Windows systems, pip comes automatically with python. On other systems such as the Linux family of systems, you need to install pip seperately.
+> [!IMPORTANT]
+> On Windows systems, pip comes automatically with python.
+> On other systems such as the Linux family of systems, you need to install pip seperately.
 
 **3. Download this repository**
 
