@@ -10,7 +10,7 @@ Meaning, it is not guaranteed to use a Llama model. \
 The frontend was made with [streamlit](https://streamlit.io). \
 If one wants to host this application themselves, they would need to install all [requirements](https://github.com/Simoso68/llama-lit/blob/main/requirements.txt) and run the script via ```streamlit run app.py```.
 
-## Using it
+## Installation
 
 As this software is not available on the community cloud, one needs it to run on their own machine.
 
