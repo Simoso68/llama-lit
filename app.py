@@ -27,9 +27,13 @@ for msg in st.session_state.messages:
 USER_INPUT = st.chat_input("Ask llama ...")
 
 if USER_INPUT:
+    AI_MESSAGES = []
+    for msg in st.session_state.messages:
+        AI_MESSAGES.append({"role": msg.name, "content": msg.content})
+    AI_MESSAGES.append({"role": "user", "content": USER_INPUT})
     new_chat_message(Message("user", USER_INPUT))
     st.session_state.messages.append(Message("user", USER_INPUT))
-    AI_STREAM = ol.chat(model=ol.list()["models"][0]["name"], messages=[{"role":"user", "content":USER_INPUT}], stream=True)
+    AI_STREAM = ol.chat(model=ol.list()["models"][0]["name"], messages=AI_MESSAGES, stream=True)
     st.session_state.response = ""
     RESPONSE_BODY = st.empty()
     with st.chat_message("ai", avatar="https://ollama.com/public/apple-touch-icon.png"):
