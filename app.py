@@ -3,6 +3,13 @@ import ollama as ol
 
 st.set_page_config("Llama-Lit", "🦙")
 
+MODELS = []
+
+for model in ol.list()["models"]:
+    MODELS.append(model["name"])
+
+SELECTED_MODEL = st.selectbox("Model", MODELS)
+
 class Message():
     def __init__(self, name, content) -> None:
         self.name = name
@@ -33,7 +40,7 @@ if USER_INPUT:
     AI_MESSAGES.append({"role": "user", "content": USER_INPUT})
     new_chat_message(Message("user", USER_INPUT))
     st.session_state.messages.append(Message("user", USER_INPUT))
-    AI_STREAM = ol.chat(model=ol.list()["models"][0]["name"], messages=AI_MESSAGES, stream=True)
+    AI_STREAM = ol.chat(model=SELECTED_MODEL, messages=AI_MESSAGES, stream=True)
     st.session_state.response = ""
     RESPONSE_BODY = st.empty()
     with st.chat_message("ai", avatar="https://ollama.com/public/apple-touch-icon.png"):

@@ -1,11 +1,9 @@
 # Llama-Lit
 
-Llama-Lit is a streamlit page providing a front-end to interact with the Llama model. \
+Llama-Lit is a streamlit page providing a front-end to interact with Ollama. \
 This is still in development and needs some adjustment to offer a good user experience. \
 \
 The backend was made using the [ollama](https://github.com/ollama/ollama-python) library. \
-Please keep in mind, that this module uses the first module listed when executing the function ```ollama.list()``` from the library itself. \
-Meaning, it is not guaranteed to use a Llama model. \
 \
 The frontend was made with [streamlit](https://streamlit.io). \
 If one wants to host this application themselves, they would need to install all [requirements](https://github.com/Simoso68/llama-lit/blob/main/requirements.txt) and run the script via ```streamlit run app.py```.
@@ -19,6 +17,10 @@ If one wants to host this application themselves, they would need to install all
 ### Stores message history in cache
 
 ![Image - Message History](https://raw.githubusercontent.com/Simoso68/llama-lit/main/images/demo_stores_history.png)
+
+### Allows you to select different AI models
+
+![Image - Select Model](https://raw.githubusercontent.com/Simoso68/llama-lit/main/images/demo_select_model.png)
 
 ## Installation
 
