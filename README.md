@@ -10,10 +10,6 @@ If one wants to host this application themselves, they would need to install all
 
 ## Features
 
-### Responds in a professional way
-
-![Image - AI Answer](https://raw.githubusercontent.com/Simoso68/llama-lit/main/images/demo_ai_answer.png)
-
 ### Stores message history in cache
 
 ![Image - Message History](https://raw.githubusercontent.com/Simoso68/llama-lit/main/images/demo_stores_history.png)

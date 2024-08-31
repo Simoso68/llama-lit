@@ -16,7 +16,7 @@ class Message():
         self.content = content
 
 def new_chat_message(message: Message):
-    if message.name == "ai":
+    if message.name == "assistant":
         AVATAR = "https://ollama.com/public/apple-touch-icon.png"
     else:
         AVATAR = None
@@ -47,5 +47,5 @@ if USER_INPUT:
         for chunk in AI_STREAM:
             st.session_state.response += chunk["message"]["content"]
             RESPONSE_BODY.write(st.session_state.response)
-    st.session_state.messages.append(Message("ai", st.session_state.response))
+    st.session_state.messages.append(Message("assistant", st.session_state.response))
     st.rerun()
