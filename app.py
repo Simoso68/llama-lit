@@ -31,7 +31,7 @@ for msg in st.session_state.messages:
     new_chat_message(msg)
 
 
-USER_INPUT = st.chat_input("Ask llama ...")
+USER_INPUT = st.chat_input("Your prompt goes here ...")
 
 if USER_INPUT:
     AI_MESSAGES = []
