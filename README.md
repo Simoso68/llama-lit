@@ -1,7 +1,7 @@
 # Llama-Lit
 
 Llama-Lit is a streamlit page providing a front-end to interact with Ollama. \
-This is still in development and needs some adjustment to offer a good user experience. \
+This is still in development and needs some adjustments to offer a good user experience. \
 \
 The backend was made using the [ollama](https://github.com/ollama/ollama-python) library. \
 \
