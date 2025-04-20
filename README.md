@@ -47,7 +47,7 @@ pip install streamlit ollama
 
 > [!IMPORTANT]
 > On Windows systems, pip comes automatically with python. \
-> On other systems such as the Linux family of systems, you need to install pip seperately.
+> On other systems such as the Linux family of systems, you need to install pip separately.
 
 **3. Download this repository**
 
